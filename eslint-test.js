@@ -1,25 +1,25 @@
 // Bad code before ESLint run
 
-// const test=()=> {
-// console.log('Hello world')
-// switch(1){
+// const getMessage=(value)=> {
+// switch(value){
 // case 1:
-// console.log("Bad indent")
+// console.log('Value is one')
 // break
+// default:
+// console.log("Unknown value")
 // }
 // }
-
+// getMessage(1)
 
 // Fixed code with ESLint
 
-const test = ( ) => {
-  console.log("Hello world")
-  switch(1){
-    case 1:
-      console.log("Bad indent")
-      break
-  }
-}
-
-
-
+const getMessage = (value) => {
+	switch (value) {
+		case 1:
+			console.log('Value is one');
+			break;
+		default:
+			console.log('Unknown value');
+	}
+};
+getMessage(1);

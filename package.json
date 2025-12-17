@@ -1,32 +1,33 @@
 {
-  "name": "code-quality",
-  "version": "1.0.0",
-  "description": "Repe for Code Quality homework",
-  "main": "test.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "prettier --write \"**/*.{ts,js,json,md}\"",
-    "format:check": "prettier --check \"**/*.{ts,js,json,md}\"",
-    "prepare": "husky",
-    "lint": "npx eslint --fix ."
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Vladyslav-Riabets/code-quality.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/Vladyslav-Riabets/code-quality/issues"
-  },
-  "homepage": "https://github.com/Vladyslav-Riabets/code-quality#readme",
-  "devDependencies": {
-    "@eslint/js": "^9.39.2",
-    "eslint": "^9.39.2",
-    "globals": "^16.5.0",
-    "husky": "^9.1.7",
-    "prettier": "^3.7.4"
-  }
+	"name": "code-quality",
+	"version": "1.0.0",
+	"description": "Repe for Code Quality homework",
+	"main": "test.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"format": "prettier --write \"**/*.{ts,js,json,md}\"",
+		"format:check": "prettier --check \"**/*.{ts,js,json,md}\"",
+		"prepare": "husky",
+		"lint": "npx eslint --fix ."
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Vladyslav-Riabets/code-quality.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "commonjs",
+	"bugs": {
+		"url": "https://github.com/Vladyslav-Riabets/code-quality/issues"
+	},
+	"homepage": "https://github.com/Vladyslav-Riabets/code-quality#readme",
+	"devDependencies": {
+		"@eslint/js": "^9.39.2",
+		"eslint": "^9.39.2",
+		"eslint-config-prettier": "^10.1.8",
+		"globals": "^16.5.0",
+		"husky": "^9.1.7",
+		"prettier": "^3.7.4"
+	}
 }

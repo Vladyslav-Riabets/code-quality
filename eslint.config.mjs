@@ -1,22 +1,30 @@
 import js from "@eslint/js";
 import globals from "globals";
-import { defineConfig } from "eslint/config";
+import prettier from "eslint-config-prettier";
 
 export default [
   {
+    ignores: ["node_modules/**", "dist/**", "build/**", "*.min.js"],
+  },
+
+  {
+    files: ["**/*.js", "**/*.mjs", "**/*.cjs"],
+    languageOptions: {
+      ecmaVersion: "latest",
+      sourceType: "module",
+      globals: {
+        ...globals.node,
+        ...globals.browser,
+      },
+    },
+
     rules: {
-      indent: ["error", 2, { SwitchCase: 1 }],
+      ...js.configs.recommended.rules,
 
-      quotes: [
-        "warn",
-        "double",
-        {
-          avoidEscape: true,
-          allowTemplateLiterals: true,
-        },
-      ],
-
-      "arrow-parens": ["error", "always"],
+      eqeqeq: ["error", "always"],
+      "no-unused-vars": "warn",
     },
   },
+
+  prettier,
 ];
